@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrity Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./logo-nexux.png" alt="Integrity Nexus Logo" class="logo">
+        <div class="title">Integrity Nexus</div>
+        <div class="menu">
+            <a href="home.html">HOME</a>
+            <a href="news.html">News</a>
+
+
+       
+            <div class="dropdown">
+                <span>Detect</span>
+                <div class="dropdown-content">
+                    <!-- <a href="text.html">Fake News Detection</a> -->
+                    <a href="videos.html">AI-Generated Video Detection</a>
+                    <a href="photos.html">AI-Generated Photo Detection</a>
+                </div>
+            </div>
+            <a href="./login/login.html">Login</a>
+            <!-- <a href="register.html">REGISTER</a> -->
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Integrity Nexus</h1>
+        <p>Your trusted source for digital integrity.</p>
+        <button>Learn More</button>
+    </section>
+
+    <main>
+        <section id="home">
+            <h2>About Us</h2>
+            <p>Integrity_Nexus is at the forefront of digital integrity, providing cutting-edge tools to detect fake news, AI-generated videos, and photos. Our mission is to empower users with the ability to distinguish between authentic and fabricated content in a rapidly evolving digital landscape.</p>
+            <p>Leveraging advanced AI technology, we analyze media for signs of manipulation, helping individuals, businesses, and organizations maintain trust in the information they consume and share.</p>
+        </section>
+        <section id="news">
+            <h2>Detect Fake News</h2>
+            <p>Enter the URL of the news article you want to verify:</p>
+            <input type="text" id="newsUrl" placeholder="Enter news URL">
+            <button onclick="detectFakeNews()">Check</button>
+            <p id="newsResult"></p>
+        </section>
+        <section id="videos">
+            <h2>Detect AI-Generated Videos</h2>
+            <p>Upload the video you want to verify:</p>
+            <input type="file" id="videoFile">
+            <button onclick="detectFakeVideo()">Check</button>
+            <p id="videoResult"></p>
+        </section>
+        <section id="photos">
+            <h2>Detect AI-Generated Photos</h2>
+            <p>Upload the photo you want to verify:</p>
+            <input type="file" id="photoFile">
+            <button onclick="detectFakePhoto()">Check</button>
+            <p id="photoResult"></p>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <div> 
+                    <label for="name">Name:</label>
+                </div>
+                <div> 
+                    <input type="text" class="input-box" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" class="input-box" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                 </div>
+                <div>
+                    <textarea id="message" name="message" required></textarea> 
+                 </div>
+                 <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2024 Integrity_Nexus. All rights reserved.
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
