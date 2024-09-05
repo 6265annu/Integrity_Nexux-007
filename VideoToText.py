@@ -1,7 +1,7 @@
 import speech_recognition as sr
 from moviepy.editor import VideoFileClip
 
-def VidToImg(VideoFile):
+def VidToText(VideoFile):
 # Open the video file and extract the audio
     clip = VideoFileClip(VideoFile)
     audio = clip.audio
